@@ -1,0 +1,27 @@
+Fonts:
+  serif - Quattrocento
+
+Layout esp. RSVP: http://mattandmallory.com/#rsvp
+- Patterns: http://subtlepatterns.com/tree-bark/
+            http://subtlepatterns.com/farmer/
+            http://subtlepatterns.com/natural-paper/
+
+
+Wish List:
+-Countdown
+
+Order:
+0. Fixed Navbar w/ live countdown
+
+1. Hero - Josh and Allie (logo + photo) 'are getting hitched'
+2. Our story
+3. Details - 6/17/17 / 5:00pst / Address
+4. Map + Photo of house - Parking details(?)
+5. Event Details
+6. Wedding Party (list - see Matt and Mallory)
+7. RSVP - progressive form
+    a. Yes > Guest(s) > Yes > How many? / Name(s) >
+                      > No -----------------------> Email / Song? / Comments > Need Help with Accommodations? > (Hotel Links)
+
+    b. No > Your Name(s)
+8. Registry
