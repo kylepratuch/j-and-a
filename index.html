@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="js/scripts.js"></script>
+    <script src="js/countdown.js"></script>
     <title>Josh and Allie</title>
   </head>
   <body>
     <nav>
-      <div id="clockdiv"></div>
+      <h3 id="countdown-holder"></h3>
 
       <a href="#home">Home</a>
       <a href="#our-story">Our Story</a>
@@ -76,5 +76,15 @@
       </div>
 
     </div>
+
+    <script>
+      var clock = document.getElementById("countdown-holder")
+        , targetDate = new Date(2017, 05, 17); // June 17, 2017;
+
+      clock.innerHTML = countdown(targetDate).toString();
+      setInterval(function(){
+        clock.innerHTML = countdown(targetDate).toString();
+      }, 1000);
+    </script>
   </body>
 </html>
