@@ -1,0 +1,16 @@
+//Helper mixins:
+@mixin show-me($color) {
+  border: 1px solid $color;
+  background-color: lighten($color, 40%);
+}
+
+//Links:
+@mixin linkify() {
+  color: darken($white, 5%);
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
+}

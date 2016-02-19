@@ -4,4 +4,30 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body {
+  background-color: #E9E7E6;
+  font-family: "Quattrocento", serif;
+  margin: 0; }
+
+nav {
+  background-color: #7B7D8D; }
+  nav .links {
+    height: 4.6em;
+    line-height: 4.5em;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: right; }
+    nav .links a {
+      color: #dddad8;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      height: 100%;
+      padding-right: 1em;
+      padding-left: 1em;
+      transition: background-color 0.1s ease-in-out; }
+      nav .links a:hover {
+        color: #E9E7E6; }
+      nav .links a:hover {
+        background-color: #9698a5; }
+
 /*# sourceMappingURL=styles.css.map */
