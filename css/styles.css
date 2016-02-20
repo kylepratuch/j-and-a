@@ -65,13 +65,11 @@ nav {
       margin-right: 0; }
 
 .story-container {
-  border: 1px solid yellow;
-  background-color: #ffffcc;
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2em;
-  padding-bottom: 2em; }
+  margin-top: 8em;
+  margin-bottom: 8em; }
   .story-container::after {
     clear: both;
     content: "";
@@ -79,8 +77,6 @@ nav {
   .story-container h3 {
     font-size: 48px; }
   .story-container .josh {
-    border: 1px solid blue;
-    background-color: #ccccff;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -89,8 +85,6 @@ nav {
     .story-container .josh:last-child {
       margin-right: 0; }
   .story-container .allie {
-    border: 1px solid red;
-    background-color: #ffcccc;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -129,5 +123,12 @@ nav {
     width: 48.82117%; }
     .story-container p:last-child {
       margin-right: 0; }
+
+.gorge-flower {
+  background-image: url("../img/gorgeflower.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 640px; }
 
 /*# sourceMappingURL=styles.css.map */

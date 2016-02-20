@@ -62,26 +62,27 @@ nav {
   }
 }
 
-//BODY CONTENT:
+//////////BODY CONTENT:
+//Story:
 .story-container {
-  @include show-me(yellow);
+  // @include show-me(yellow);
   @include outer-container(60%);
-  padding-top:2em;
-  padding-bottom:2em;
+  margin-top:8em;
+  margin-bottom:8em;
 
   h3 {
     font-size:48px;
   }
 
   .josh {
-    @include show-me(blue);
+    // @include show-me(blue);
     @include span-columns(5);
     text-align:right;
     // padding-right:1em;
   }
 
   .allie {
-    @include show-me(red);
+    // @include show-me(red);
     @include span-columns(5);
     @include omega();
     // padding-left:1em;
@@ -107,4 +108,10 @@ nav {
     font-family:$sans-serif;
     @include span-columns(6);
   }
+}
+
+//Photo Banner:
+.gorge-flower {
+  @include bg-img($flower);
+  height:640px;
 }
