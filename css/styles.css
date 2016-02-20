@@ -11,8 +11,9 @@ body {
 
 nav {
   background-color: #7B7D8D;
-  box-shadow: 0 0 10px #90949E;
-  z-index: 1000; }
+  border-top: 2px solid #4b4c57;
+  border-bottom: 2px solid #4b4c57;
+  box-shadow: 0 0 20px black; }
   nav .links {
     height: 4.6em;
     line-height: 4.5em;
@@ -40,19 +41,26 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 75vh; }
+  height: 800px;
+  position: relative;
+  z-index: -1; }
   .hero::after {
     clear: both;
     content: "";
     display: table; }
   .hero .hero-content {
-    border: 1px solid red;
-    background-color: #ffcccc;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    margin-left: 51.17883%; }
+    margin-left: 51.17883%;
+    background-color: #7B7D8D;
+    border: 2px solid #4b4c57;
+    position: absolute;
+    top: 15%;
+    box-shadow: 0 0 20px black;
+    height: 50%;
+    color: #E9E7E6; }
     .hero .hero-content:last-child {
       margin-right: 0; }
 
