@@ -12,27 +12,44 @@ body {
   margin:0;
 }
 
+// HEADER STYLES:
 nav {
   background-color:$blue-gray;
-
+  box-shadow:0 0 10px $gray;
+  z-index:1000;
 
   .links {
     height: 4.6em;
     line-height:4.5em;
     font-family:$sans-serif;
-    text-align:right;
+    text-align:center;
 
     a {
       @include linkify;
       display:inline-block;
       height:100%;
-      padding-right:1em;
-      padding-left:1em;
+      padding-right:2em;
+      padding-left:2em;
       transition: background-color 0.1s ease-in-out;
 
       &:hover {
         background-color:lighten($blue-gray, 10%);
       }
     }
+  }
+}
+
+// MAIN BANNER:
+.hero {
+  @include outer-container(100%);
+  @include bg-img($hero-img);
+  height:75vh;
+
+  .hero-content {
+    @include show-me(red);
+    @include span-columns(4);
+    @include shift(6);
+
+
   }
 }

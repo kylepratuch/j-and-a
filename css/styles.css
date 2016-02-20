@@ -10,24 +10,50 @@ body {
   margin: 0; }
 
 nav {
-  background-color: #7B7D8D; }
+  background-color: #7B7D8D;
+  box-shadow: 0 0 10px #90949E;
+  z-index: 1000; }
   nav .links {
     height: 4.6em;
     line-height: 4.5em;
     font-family: Helvetica, Arial, sans-serif;
-    text-align: right; }
+    text-align: center; }
     nav .links a {
       color: #dddad8;
       font-weight: bold;
       text-decoration: none;
       display: inline-block;
       height: 100%;
-      padding-right: 1em;
-      padding-left: 1em;
+      padding-right: 2em;
+      padding-left: 2em;
       transition: background-color 0.1s ease-in-out; }
       nav .links a:hover {
         color: #E9E7E6; }
       nav .links a:hover {
         background-color: #9698a5; }
+
+.hero {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/jandacamping.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh; }
+  .hero::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .hero .hero-content {
+    border: 1px solid red;
+    background-color: #ffcccc;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 51.17883%; }
+    .hero .hero-content:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=styles.css.map */
