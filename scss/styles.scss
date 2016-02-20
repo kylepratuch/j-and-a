@@ -15,8 +15,8 @@ body {
 // HEADER STYLES:
 nav {
   background-color:$blue-gray;
-  border-top:2px solid darken($blue-gray, 20%);
-  border-bottom:2px solid darken($blue-gray, 20%);
+  border-top:1px solid darken($blue-gray, 20%);
+  border-bottom:1px solid darken($blue-gray, 20%);
   box-shadow:0 0 20px black;
 
   .links {
@@ -40,7 +40,7 @@ nav {
   }
 }
 
-// MAIN BANNER:
+// BANNER:
 .hero {
   @include outer-container(100%);
   @include bg-img($hero-img);
@@ -52,12 +52,41 @@ nav {
     @include span-columns(4);
     @include shift(6);
     background-color:$blue-gray;
-    border:2px solid darken($blue-gray, 20%);
+    border:1px solid darken($blue-gray, 20%);
     position:absolute;
     top:15%;
     box-shadow:0 0 20px black;
     height:50%;
     color:$white;
 
+  }
+}
+
+//BODY CONTENT:
+.container {
+  @include outer-container(60%);
+
+  .story {
+    @include show-me(yellow);
+
+    h3 {
+      font-size:48px;
+    }
+
+    .josh {
+      @include show-me(blue);
+      @include span-columns(6);
+      text-align:right;
+    }
+
+    .allie {
+      @include show-me(red);
+      @include span-columns(6);
+      @include omega();
+    }
+
+    p {
+      column-count:2;
+    }
   }
 }

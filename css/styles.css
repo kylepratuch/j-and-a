@@ -11,8 +11,8 @@ body {
 
 nav {
   background-color: #7B7D8D;
-  border-top: 2px solid #4b4c57;
-  border-bottom: 2px solid #4b4c57;
+  border-top: 1px solid #4b4c57;
+  border-bottom: 1px solid #4b4c57;
   box-shadow: 0 0 20px black; }
   nav .links {
     height: 4.6em;
@@ -55,7 +55,7 @@ nav {
     width: 31.76157%;
     margin-left: 51.17883%;
     background-color: #7B7D8D;
-    border: 2px solid #4b4c57;
+    border: 1px solid #4b4c57;
     position: absolute;
     top: 15%;
     box-shadow: 0 0 20px black;
@@ -63,5 +63,41 @@ nav {
     color: #E9E7E6; }
     .hero .hero-content:last-child {
       margin-right: 0; }
+
+.container {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .container .story {
+    border: 1px solid yellow;
+    background-color: #ffffcc; }
+    .container .story h3 {
+      font-size: 48px; }
+    .container .story .josh {
+      border: 1px solid blue;
+      background-color: #ccccff;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      text-align: right; }
+      .container .story .josh:last-child {
+        margin-right: 0; }
+    .container .story .allie {
+      border: 1px solid red;
+      background-color: #ffcccc;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      .container .story .allie:last-child {
+        margin-right: 0; }
+    .container .story p {
+      column-count: 2; }
 
 /*# sourceMappingURL=styles.css.map */
