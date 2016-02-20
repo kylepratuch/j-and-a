@@ -63,30 +63,48 @@ nav {
 }
 
 //BODY CONTENT:
-.container {
+.story-container {
+  @include show-me(yellow);
   @include outer-container(60%);
+  padding-top:2em;
+  padding-bottom:2em;
 
-  .story {
-    @include show-me(yellow);
+  h3 {
+    font-size:48px;
+  }
 
-    h3 {
-      font-size:48px;
-    }
+  .josh {
+    @include show-me(blue);
+    @include span-columns(5);
+    text-align:right;
+    // padding-right:1em;
+  }
 
-    .josh {
-      @include show-me(blue);
-      @include span-columns(6);
-      text-align:right;
-    }
+  .allie {
+    @include show-me(red);
+    @include span-columns(5);
+    @include omega();
+    // padding-left:1em;
+  }
 
-    .allie {
-      @include show-me(red);
-      @include span-columns(6);
-      @include omega();
-    }
+  .small-graphic {
+    @include show-me(green);
+    @include span-columns(2);
+    height:100px;
+    margin-top:20px;
+  }
 
-    p {
-      column-count:2;
-    }
+  h4 {
+    @include span-columns(4);
+    @include shift(4);
+    text-align:center;
+    font-size: 36px;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+  }
+
+  p {
+    font-family:$sans-serif;
+    @include span-columns(6);
   }
 }

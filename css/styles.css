@@ -64,40 +64,70 @@ nav {
     .hero .hero-content:last-child {
       margin-right: 0; }
 
-.container {
+.story-container {
+  border: 1px solid yellow;
+  background-color: #ffffcc;
   max-width: 60%;
   margin-left: auto;
-  margin-right: auto; }
-  .container::after {
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .story-container::after {
     clear: both;
     content: "";
     display: table; }
-  .container .story {
-    border: 1px solid yellow;
-    background-color: #ffffcc; }
-    .container .story h3 {
-      font-size: 48px; }
-    .container .story .josh {
-      border: 1px solid blue;
-      background-color: #ccccff;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      text-align: right; }
-      .container .story .josh:last-child {
-        margin-right: 0; }
-    .container .story .allie {
-      border: 1px solid red;
-      background-color: #ffcccc;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
+  .story-container h3 {
+    font-size: 48px; }
+  .story-container .josh {
+    border: 1px solid blue;
+    background-color: #ccccff;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    text-align: right; }
+    .story-container .josh:last-child {
       margin-right: 0; }
-      .container .story .allie:last-child {
-        margin-right: 0; }
-    .container .story p {
-      column-count: 2; }
+  .story-container .allie {
+    border: 1px solid red;
+    background-color: #ffcccc;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-right: 0; }
+    .story-container .allie:last-child {
+      margin-right: 0; }
+  .story-container .small-graphic {
+    border: 1px solid green;
+    background-color: #4dff4d;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    height: 100px;
+    margin-top: 20px; }
+    .story-container .small-graphic:last-child {
+      margin-right: 0; }
+  .story-container h4 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 34.11922%;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+    .story-container h4:last-child {
+      margin-right: 0; }
+  .story-container p {
+    font-family: Helvetica, Arial, sans-serif;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .story-container p:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=styles.css.map */
