@@ -17,7 +17,7 @@ nav {
   nav .links {
     height: 4.6em;
     line-height: 4.5em;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     text-align: center; }
     nav .links a {
       color: #dddad8;
@@ -116,7 +116,7 @@ nav {
     .story-container h4:last-child {
       margin-right: 0; }
   .story-container p {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -125,10 +125,90 @@ nav {
       margin-right: 0; }
 
 .gorge-flower {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("../img/gorgeflower.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 640px; }
+  height: 640px;
+  background-position: bottom;
+  position: relative; }
+  .gorge-flower::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .gorge-flower .flower-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 51.17883%;
+    position: absolute;
+    top: 30%; }
+    .gorge-flower .flower-content:last-child {
+      margin-right: 0; }
+    .gorge-flower .flower-content h1 {
+      text-align: center;
+      font-size: 80px;
+      font-weight: bold;
+      color: #E9E7E6;
+      text-shadow: 2px 2px 5px black; }
+
+.wedding-party {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .wedding-party::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wedding-party p {
+    font-weight: bold; }
+    .wedding-party p .best-man, .wedding-party p .moh {
+      font-size: 36px;
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
+    .wedding-party p .title {
+      font-size: 28px; }
+    .wedding-party p .name {
+      font-size: 30px;
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+      line-height: 15px; }
+  .wedding-party .bridesmaids, .wedding-party .groomsmen {
+    border: 1px solid red;
+    background-color: #ffcccc;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .wedding-party .bridesmaids:last-child, .wedding-party .groomsmen:last-child {
+      margin-right: 0; }
+    .wedding-party .bridesmaids .maids-left, .wedding-party .bridesmaids .men-left, .wedding-party .groomsmen .maids-left, .wedding-party .groomsmen .men-left {
+      border: 1px solid blue;
+      background-color: #ccccff;
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 47.58542%; }
+      .wedding-party .bridesmaids .maids-left:last-child, .wedding-party .bridesmaids .men-left:last-child, .wedding-party .groomsmen .maids-left:last-child, .wedding-party .groomsmen .men-left:last-child {
+        margin-right: 0; }
+    .wedding-party .bridesmaids .maids-right, .wedding-party .bridesmaids .men-right, .wedding-party .groomsmen .maids-right, .wedding-party .groomsmen .men-right {
+      border: 1px solid blue;
+      background-color: #ccccff;
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 47.58542%; }
+      .wedding-party .bridesmaids .maids-right:last-child, .wedding-party .bridesmaids .men-right:last-child, .wedding-party .groomsmen .maids-right:last-child, .wedding-party .groomsmen .men-right:last-child {
+        margin-right: 0; }
+  .wedding-party .men {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .wedding-party .men:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=styles.css.map */

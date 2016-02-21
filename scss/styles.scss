@@ -112,6 +112,70 @@ nav {
 
 //Photo Banner:
 .gorge-flower {
+  @include outer-container(100%);
   @include bg-img($flower);
   height:640px;
+  background-position:bottom;
+  position:relative;
+
+  .flower-content {
+    // @include show-me(red);
+    @include span-columns(5);
+    @include shift(6);
+    position:absolute;
+    top:30%;
+
+    h1 {
+      text-align:center;
+      font-size:80px;
+      font-weight:bold;
+      color:$white;
+      text-shadow:2px 2px 5px black;
+    }
+  }
+}
+
+//Wedding party:
+.wedding-party {
+  // @include show-me(yellow);
+  @include outer-container(70%);
+  text-align:center;
+
+  p {
+    font-weight:bold;
+
+    .best-man, .moh {
+      font-size:36px;
+      font-family:$sans-serif;
+    }
+    .title {
+      font-size:28px;
+    }
+    .name {
+      font-size: 30px;
+      font-family:$sans-serif;
+      line-height:15px;
+    }
+  }
+  // .officiant {
+  //   // @include show-me(green);
+  // }
+  .bridesmaids, .groomsmen {
+    @include show-me(red);
+    @include span-columns(6);
+
+    .maids-left, .men-left {
+      @include show-me(blue);
+      @include span-columns(3 of 6);
+    }
+    .maids-right, .men-right {
+      @include show-me(blue);
+      @include span-columns(3 of 6);
+    }
+  }
+  .men {
+    // @include show-me(blue);
+    @include span-columns(6);
+  }
+
 }
